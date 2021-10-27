@@ -1,11 +1,13 @@
 import {Component} from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import '../css/Header.css';
 
 export default class Header extends Component {
   render() {
     return(
-      <>
-        <h1>This is a title</h1>
-      </>
+      <Navbar expand="lg" bg="dark" variant="dark" id="navbarHeader">
+         <Navbar.Brand>Horned Beasts</Navbar.Brand>
+      </Navbar>
     )
   }
 }
