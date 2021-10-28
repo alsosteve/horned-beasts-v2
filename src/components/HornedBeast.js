@@ -19,6 +19,11 @@ export default class HornedBeast extends Component {
     });
   }
 
+  handleClickModal = () => {
+    this.props.changeBeast(this.props.beast);
+    this.props.showModal();
+  }
+
   render() {
     return (
       <Card id="beastCard" style={{ width: '18rem' }}>
@@ -29,6 +34,7 @@ export default class HornedBeast extends Component {
           {this.props.beast.description}
          </Card.Text>
          <Button variant="primary" onClick={this.handleClick}>{'❤ '}{this.state.likes}</Button>
+         <Button onClick={this.handleClickModal} variant="primary">{'Info'}</Button>
         </Card.Body>
       </Card>
     )

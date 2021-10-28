@@ -32,4 +32,24 @@ Finish time: 03:25 Am
 
 Actual time needed to complete: 35 min
 
+#### Lab 03 - Passing Functions in Props:
+
+Estimate of time needed to complete: 30 min
+
+Start time: 00:00 Am
+
+Finish time: 00:00 Am
+
+Actual time needed to complete: 00 min
+
+#### Lab 00 - :
+
+Estimate of time needed to complete: 00 min
+
+Start time: 00:00 Am
+
+Finish time: 00:00 Am
+
+Actual time needed to complete: 00 min
+
 > Instructions provided by Code Fellows
