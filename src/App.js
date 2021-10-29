@@ -3,6 +3,7 @@ import Header from './components/Header.js';
 import Main from './components/Main';
 import Footer from './components/Footer.js';
 import Modal from './components/SelectedBeast';
+import HornForm from './components/HornForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -35,6 +36,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+        <HornForm />
         <Main changeBeast={this.changeBeast} showModal={this.showModal}/>
         <Footer />
         <Modal beast={this.state.selectedBeast} hideModal={this.hideModal} showModal={this.state.modal}/>

@@ -36,15 +36,15 @@ Actual time needed to complete: 35 min
 
 Estimate of time needed to complete: 30 min
 
-Start time: 00:00 Am
+Start time: 10:30 Pm
 
-Finish time: 00:00 Am
+Finish time: 11:30 Pm
 
-Actual time needed to complete: 00 min
+Actual time needed to complete: 1 hr
 
-#### Lab 00 - :
+#### Lab 04 - Forms and Filter:
 
-Estimate of time needed to complete: 00 min
+Estimate of time needed to complete: 1 hr
 
 Start time: 00:00 Am
 
