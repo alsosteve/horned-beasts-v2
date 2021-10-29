@@ -32,7 +32,7 @@ export default class SelectedBeast extends Component {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.props.handleClose}>
+            <Button variant="secondary" onClick={this.props.hideModal}>
               Close
             </Button>
           </Modal.Footer>
