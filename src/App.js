@@ -7,13 +7,29 @@ import HornForm from './components/HornForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+import allBios from './data.json';
+
 export default class App extends Component {
 
   constructor(props){
     super(props);
     this.state = {
+      beastBios: allBios,
       selectedBeast: {},
       modal: false,
+    }
+  }
+
+  handleChange = (event) => {
+    let selection = event.target.value;
+    let newBios;
+    if (selection === "all") {
+      this.setState({ beastBios: allBios })
+    } else {
+      newBios = allBios.filter(beast => {
+        return (beast.horns === parseInt(selection));
+      });
+      this.setState({ beastBios: newBios })
     }
   }
 
@@ -24,20 +40,18 @@ export default class App extends Component {
   // function that changes showModal to true
   showModal = () => {
     this.setState({ modal: true })
-    console.log("stuff");
   }
 
   hideModal = () => {
     this.setState({ modal: false })
-    console.log("hide stuff");
   }
 
   render() {
     return (
       <div>
         <Header />
-        <HornForm />
-        <Main changeBeast={this.changeBeast} showModal={this.showModal}/>
+        <HornForm handleChange={this.handleChange}/>
+        <Main beastBios={this.state.beastBios} changeBeast={this.changeBeast} showModal={this.showModal}/>
         <Footer />
         <Modal beast={this.state.selectedBeast} hideModal={this.hideModal} showModal={this.state.modal}/>
       </div>
