@@ -46,10 +46,10 @@ Actual time needed to complete: 1 hr
 
 Estimate of time needed to complete: 1 hr
 
-Start time: 00:00 Am
+Start time: 10:30 Pm
 
-Finish time: 00:00 Am
+Finish time: 11:40 Pm
 
-Actual time needed to complete: 00 min
+Actual time needed to complete: 1hr 10 min
 
 > Instructions provided by Code Fellows
